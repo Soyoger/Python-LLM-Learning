@@ -1,0 +1,90 @@
+{
+  "builder_name": "weibo_ner",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "weibo_ner",
+  "dataset_size": 1649328,
+  "description": "Tags: PER(\u4eba\u540d), LOC(\u5730\u70b9\u540d), GPE(\u884c\u653f\u533a\u540d), ORG(\u673a\u6784\u540d)\nLabel\tTag\tMeaning\nPER\tPER.NAM\t\u540d\u5b57\uff08\u5f20\u4e09\uff09\nPER.NOM\t\u4ee3\u79f0\u3001\u7c7b\u522b\u540d\uff08\u7a77\u4eba\uff09\nLOC\tLOC.NAM\t\u7279\u6307\u540d\u79f0\uff08\u7d2b\u7389\u5c71\u5e84\uff09\nLOC.NOM\t\u6cdb\u79f0\uff08\u5927\u5ce1\u8c37\u3001\u5bbe\u9986\uff09\nGPE\tGPE.NAM\t\u884c\u653f\u533a\u7684\u540d\u79f0\uff08\u5317\u4eac\uff09\nORG\tORG.NAM\t\u7279\u5b9a\u673a\u6784\u540d\u79f0\uff08\u901a\u60e0\u533b\u9662\uff09\nORG.NOM\t\u6cdb\u6307\u540d\u79f0\u3001\u7edf\u79f0\uff08\u6587\u827a\u516c\u53f8\uff09\n",
+  "download_checksums": {
+    "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/Weibo/weiboNER_2nd_conll.train": {
+      "num_bytes": 536039,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/Weibo/weiboNER_2nd_conll.dev": {
+      "num_bytes": 105881,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/Weibo/weiboNER_2nd_conll.test": {
+      "num_bytes": 108767,
+      "checksum": null
+    }
+  },
+  "download_size": 750687,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "B-GPE.NAM",
+          "B-GPE.NOM",
+          "B-LOC.NAM",
+          "B-LOC.NOM",
+          "B-ORG.NAM",
+          "B-ORG.NOM",
+          "B-PER.NAM",
+          "B-PER.NOM",
+          "I-GPE.NAM",
+          "I-GPE.NOM",
+          "I-LOC.NAM",
+          "I-LOC.NOM",
+          "I-ORG.NAM",
+          "I-ORG.NOM",
+          "I-PER.NAM",
+          "I-PER.NOM",
+          "O"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://github.com/OYE93/Chinese-NLP-Corpus/tree/master/NER/Weibo",
+  "license": "",
+  "size_in_bytes": 2400015,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1179573,
+      "num_examples": 1350,
+      "dataset_name": "weibo_ner"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 232364,
+      "num_examples": 270,
+      "dataset_name": "weibo_ner"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 237391,
+      "num_examples": 270,
+      "dataset_name": "weibo_ner"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
